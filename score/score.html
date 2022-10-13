@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contagem</title>
+
+    <link rel="stylesheet" href="../javascript-codes-styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <img
+          class="arrow-left"
+          src="../assets/arrow-left.svg"
+          alt="Arrow Left"
+          onclick="window.location.href='/javascript-codes.html'"
+        />
+        <h1>Contagem</h1>
+      </div>
+    </header>
+
+    <section>
+      <p class="long-text">
+        Digite abaixo o número inicial, o final e o passo da contagem:
+      </p>
+      <input type="number" name="start" id="start" placeholder="Início:" />
+
+      <input type="number" name="end" id="end" placeholder="Fim:" />
+
+      <input type="number" name="pass" id="pass" placeholder="Passo:" />
+      <div class="buttons">
+        <button type="submit" onclick="contar()">Executar</button>
+        <button type="reset" onclick="Clear()">Limpar campos</button>
+      </div>
+
+      <div>
+        <p id="res"></p>
+      </div>
+    </section>
+
+    <script src="./score.js"></script>
+  </body>
+</html>

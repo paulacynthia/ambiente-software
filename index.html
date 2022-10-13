@@ -17,38 +17,45 @@
   </head>
   <body>
     <header class="container">
-      <h1 class="texts text-color">
-        Algoritmos base da lógica de programação:
-      </h1>
-      <div class="hihi">
-        <p class="texts teste">
+      <h1 class="texts title">Algoritmos base da lógica de programação:</h1>
+      <div class="subdivision">
+        <p class="texts subtitle">
           Algoritmos disponibilizados na linguagem
-          <strong class="text-color-dois">JavaScript</strong> e
-          <strong class="text-color-dois">Java</strong>, para ter acesso basta
+          <strong class="text-highlight">JavaScript</strong> e
+          <strong class="text-highlight">Java</strong>, para ter acesso basta
           clicar em um dos botões abaixo e aguardar redirecionamento:
         </p>
       </div>
     </header>
-    <section>
+
+    <section class="cards">
       <div class="card">
-        <img src="./assets/javascript.svg" alt="Logo JavaScript" />
-        <div class="card-texts-javascript">
+        <img
+          class="image-javascript"
+          src="./assets/javascript.svg"
+          alt="Logo JavaScript"
+        />
+        <div class="card-texts">
           <h4>JavaScript</h4>
-          <p>Aqui você encontra os códigos na linguagem JavaScript!</p>
-          <button>Quero ver os códigos!</button>
+          <p>Aqui você encontra os códigos na linguagem JS!</p>
+          <button onclick="window.location.href='/javascript-codes.html'">
+            Quero ver os códigos!
+          </button>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="card java">
-        <img src="./assets/java.svg" alt="Logo Java" class="java"/>
-        <div class="card-texts-javascript">
+
+      <div class="card">
+        <img class="image-java" src="./assets/java.svg" alt="Logo Java" />
+        <div class="card-texts">
           <h4>Java</h4>
           <p>Aqui você encontra os códigos na linguagem Java!</p>
-          <button>Quero ver os códigos!</button>
+          <button onclick="window.location.href='/java-codes.html'">
+            Quero ver os códigos!
+          </button>
         </div>
       </div>
     </section>
+
     <footer>
       <h3>Ambiente e Desenvolvimento de Softwares</h3>
       <span>© 2022 ADS. Todos os direitos reservados.</span>

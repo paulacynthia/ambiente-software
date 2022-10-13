@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somador</title>
+
+    <link rel="stylesheet" href="../javascript-codes-styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <img
+          class="arrow-left"
+          src="../assets/arrow-left.svg"
+          alt="Arrow Left"
+          onclick="window.location.href='/javascript-codes.html'"
+        />
+        <h1>Somador</h1>
+      </div>
+    </header>
+
+    <section>
+      <p>Número (entre 1 e 100):</p>
+      <input type="number" name="fnum" id="fnum" />
+
+      <div>
+        <button type="submit" onclick="Adicionar()">Adicionar</button>
+        <button type="reset" onclick="Clear()">Limpar campos</button>
+      </div>
+
+      <br /><br />
+      <select name="flista" id="flista" size="6"></select>
+      <br />
+      <button onclick="Finalizar()">Finalizar</button>
+      <div id="res"></div>
+    </section>
+
+    <script src="summation.js"></script>
+  </body>
+</html>
